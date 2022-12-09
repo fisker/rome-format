@@ -1,6 +1,6 @@
 {
   "name": "rome-format",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Format code with Rome.",
   "homepage": "https://github.com/fisker/rome-format#readme",
   "bugs": {
