@@ -39,5 +39,5 @@ const romeFormatSync = (text, options) => {
   rome ??= initRomeSync()
   return runRomeFormat(rome, text, options)
 }
-romeFormat.sync = romeFormatSync
 export default romeFormat
+export {romeFormatSync}

@@ -1,7 +1,7 @@
 import {Buffer} from 'node:buffer'
 import test from 'ava'
 import dedent from 'dedent'
-import format from './index.js'
+import format, {romeFormatSync as formatSync} from './index.js'
 
 async function formatTester(t, {input, expected, options}) {
   expected += '\n'
@@ -41,7 +41,7 @@ test('support buffer', async (t) => {
 })
 
 test('sync', (t) => {
-  t.is(format.sync('foo ( )'), 'foo();\n')
+  t.is(formatSync('foo ( )'), 'foo();\n')
 })
 
 test('error', async (t) => {
