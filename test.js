@@ -1,6 +1,4 @@
-import path from 'node:path'
 import {Buffer} from 'node:buffer'
-import process from 'node:process'
 import test from 'ava'
 import dedent from 'dedent'
 import format from './index.js'
@@ -42,11 +40,11 @@ test('support buffer', async (t) => {
   })
 })
 
-test('sync', t => {
+test('sync', (t) => {
   t.is(format.sync('foo ( )'), 'foo();\n')
 })
 
-test('error', async t => {
+test('error', async (t) => {
   await t.throwsAsync(() => format('foo ( )', {filePath: 'source.unknown'}))
   await t.throwsAsync(() => format('1++'))
 })

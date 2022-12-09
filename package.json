@@ -1,11 +1,11 @@
 {
   "name": "rome-format",
   "version": "0.0.0",
+  "description": "Format code with Rome.",
   "homepage": "https://github.com/fisker/rome-format#readme",
   "bugs": {
     "url": "https://github.com/fisker/rome-format/issues"
   },
-  "description": "Format code with Rome.",
   "repository": "fisker/rome-format",
   "funding": "https://github.com/fisker/rome-format?sponsor=1",
   "license": "MIT",

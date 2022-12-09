@@ -18,9 +18,8 @@ jobs:
           - "macos-latest"
           - "windows-latest"
         node_version:
+          - "19"
           - "18"
-          - "16"
-          - "14"
         # exclude:
         #   - os: "macos-latest"
         #     node_version: "12"
@@ -50,9 +49,10 @@ jobs:
       - name: Run Test
         run: yarn test-coverage
 
-      - uses: codecov/codecov-action@v3
+      - name: Upload Coverage
+        uses: coverallsapp/github-action@master
         with:
-          fail_ci_if_error: true
+          github-token: ${{ secrets.github_token }}
 
   lint:
     name: Lint
