@@ -53,7 +53,7 @@
     ]
   },
   "dependencies": {
-    "@rometools/js-api": "0.2.0",
+    "@rometools/js-api": "0.3.0",
     "@rometools/wasm-nodejs": "11.0.0"
   },
   "devDependencies": {
